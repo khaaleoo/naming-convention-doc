@@ -36,3 +36,26 @@
         "userName": "John"
     }
     ```
+
+### III. API Response
+- With success response, the response should be in the following format:
+    ```
+    {
+        "code": 200,
+        "status": "success",
+        "data": {
+            "user_id": 1,
+            "user_name": "John"
+        }
+    }
+    ```
+    The `data` key is optional. It depends on the API.
+- With error response, the response should be in the following format:
+    ```
+    {
+        "code": 400,
+        "status": "error",
+        "message": "Bad request"
+    }
+    ```
+    The `message` key is optional. It depends on the API.
