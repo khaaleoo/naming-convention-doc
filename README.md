@@ -1,5 +1,12 @@
 ## Naming Convention
 
+This document describes the naming convention for all projects. Including:
+- [Naming Convention](#naming-convention)
+  - [I. Redis Key](#i-redis-key)
+  - [II. RESTful API url naming](#ii-restful-api-url-naming)
+  - [III. API Payload](#iii-api-payload)
+  - [IV. API Response Message](#iv-api-response-message)
+
 ### I. Redis Key
 - We use colon sign `:` is a convention when naming keys
 - For multi-word keys, we use hyphen sign `-` as a separator<br>
@@ -19,7 +26,29 @@
     app2:user:1:role
     ```
 
-### II. API Response
+### II. RESTful API url naming
+- We use hyphen sign `-` as a separator for multi-word URL.<br/>
+- All lower case.<br/>
+- No extension. Such as `.html`, `.php`, `.jsp`.<br/>
+- Status code in body message is same as HTTP status code.<br/>
+- Naming convention:<br/>
+    + Not good:
+    ```
+    GET /user/getUserById
+    POST /user/createUser
+    PUT /user/updateUser
+    DELETE /user/deleteUser
+    ```
+    + Good:
+    ```
+    GET /user/:id
+    POST /user
+    PUT /user/:id
+    DELETE /user/:id
+    ```
+
+
+### III. API Payload
 - We use snake_case for all keys in API response<br/>
 - For instance:
     ```
@@ -37,7 +66,7 @@
     }
     ```
 
-### III. API Response
+### IV. API Response Message
 - With success response, the response should be in the following format:
     ```
     {
