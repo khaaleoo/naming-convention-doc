@@ -3,7 +3,7 @@
 This document describes the naming convention for all projects. Including:
 - [Naming Convention](#naming-convention)
   - [I. Redis Key](#i-redis-key)
-  - [II. RESTful API url naming](#ii-restful-api-url-naming)
+  - [II. RESTful API Url Naming](#ii-restful-api-url-naming)
   - [III. API Payload](#iii-api-payload)
   - [IV. API Response Message](#iv-api-response-message)
 
@@ -26,7 +26,7 @@ This document describes the naming convention for all projects. Including:
     app2:user:1:role
     ```
 
-### II. RESTful API url naming
+### II. RESTful API Url Naming
 - We use hyphen sign `-` as a separator for multi-word URL.<br/>
 - All lower case.<br/>
 - No extension. Such as `.html`, `.php`, `.jsp`.<br/>
